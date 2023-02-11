@@ -4,7 +4,7 @@
 This project is aimed at setting up a real-time metric collection pipeline using Telegraf, Kafka, Spark, Elasticsearch, InfluxDB, Grafana and Apache Burrow. The pipeline is designed to collect metrics from various sources, process the data in real-time, and display the results on a Grafana dashboard. Additionally, Apache Burrow is used to monitor the Kafka Consumer Lag, and the results are collected by Telegraf and visualized in Grafana.
 
 ## Project Architecture
-![Project Architecture](Project_Architecture.png)
+![draw](https://user-images.githubusercontent.com/49933141/218268836-74396a01-1c38-4418-b5c5-f14ce2271643.png)
 
 The project architecture is as follows:
 1. Telegraf is used to collect metrics from various sources such as servers, databases and applications.
@@ -33,8 +33,6 @@ The project architecture is as follows:
 5. Apache Burrow monitors the Kafka Consumer Lag and provides the results through its REST API.
 6. Telegraf collects the results from Apache Burrow's REST API.
 7. Grafana retrieves the data from InfluxDB and displays it in real-time on a dashboard.
-
-![draw](https://user-images.githubusercontent.com/49933141/218268836-74396a01-1c38-4418-b5c5-f14ce2271643.png)
 
 ## Project Set-up
 To set up the project, follow the steps below:
