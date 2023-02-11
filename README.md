@@ -33,24 +33,7 @@ The project architecture is as follows:
 6. Elasticsearch stores the processed data.
 7. Grafana retrieves the data from InfluxDB and displays it in real-time on a dashboard.
 
-+------------+ +----------+ +------------+
-| Telegraf |---->| Kafka |<----->| Spark |
-+------------+ +----------+ +------------+
-                    |
-                    v
-           +-----------------+
-           | Kafka Connector |
-           +-----------------+
-                    |
-                    v
-      +----------+ +---------------+ 
-      | InfluxDB | | Elasticsearch |
-      +----------+ +---------------+
-                   |
-                   v
-              +----------+
-              | Grafana |
-              +----------+
+![draw](https://user-images.githubusercontent.com/49933141/218249476-75bc479b-65e0-4142-bbbc-2e5eef05900b.png)
 
 ## Project Set-up
 To set up the project, follow the steps below:
